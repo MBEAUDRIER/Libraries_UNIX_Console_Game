@@ -23,7 +23,6 @@ void gotoXY(int x,int y)
     fflush(stdout);
 }
 
-
 void set_conio_terminal_mode()
 {
     struct termios new_termios;
