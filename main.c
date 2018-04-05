@@ -12,3 +12,9 @@ void hidecursor(void)
     fflush(stdout);
     return 0;
 }
+
+void gotoxy(int x,int y)
+{
+    printf("\x1b[%d;%dH",y,x);
+    fflush(stdout);
+}
