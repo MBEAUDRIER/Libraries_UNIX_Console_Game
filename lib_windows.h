@@ -48,4 +48,3 @@ void clrscr(void)
                                info.dwSize.Y,coord,&nbcar);
     SetConsoleCursorPosition(handle,coord);
 }
-
