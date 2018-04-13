@@ -43,4 +43,3 @@ int get_key()
     FD_SET(0, &fds);
     return select(1, &fds, NULL, NULL, &tv);
 }
-
