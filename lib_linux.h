@@ -23,7 +23,7 @@ void gotoXY(int x,int y)
     fflush(stdout);
 }
 
-void set_conio_terminal_mode()
+void init()
 {
     struct termios new_termios;
 
@@ -35,7 +35,7 @@ void set_conio_terminal_mode()
     tcsetattr(0, TCSANOW, &new_termios);
 }
 
-int kbhit()
+int get_key()
 {
     struct timeval tv = { 0L, 0L };
     fd_set fds;
