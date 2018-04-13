@@ -14,7 +14,6 @@ void hidecursor(void)
 {
     printf("\e[?25l");
     fflush(stdout);
-    return 0;
 }
 
 void gotoXY(int x,int y)
